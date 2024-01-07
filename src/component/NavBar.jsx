@@ -1,22 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <ul className="nav justify-content-center btn-hover">
+    <ul className="nav justify-content-center btn-hover bg-dark text-light">
   <li className="nav-item">
-    <a className="nav-link active" aria-current="page" href="#">Home</a>
+    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">About</a>
+    <Link className="nav-link" to="/About">About</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">Skill</a>
+    <Link className="nav-link" to="/Skill">Skill</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">Services</a>
+    <Link className="nav-link" to="/Projects">Projects</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link" href='#' aria-disabled="true">Contact</a>
+    <Link className="nav-link" to='/Contact' aria-disabled="true">Contact</Link>
   </li>
 </ul>
  
